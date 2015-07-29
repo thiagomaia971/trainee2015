@@ -8,4 +8,6 @@ for letra in palavra:
     if letra in letras:
         i = i + letras[letra]
 
-print('Existem ', i,'buracos em ', palavra)
+print('Existem', i,'buracos em', palavra)
+
+#>> Existem 4 buracos em INCONSTITUCIONALISSIMAMENTE
