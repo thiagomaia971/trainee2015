@@ -23,7 +23,6 @@ public class DOJO_Buracos {
 		int Contador_Buracos = 0;
 	
 		for(String letra : palavra.split("")){
-			System.out.println(letra);
 			if(letras.containsKey(letra)){
 				Contador_Buracos += letras.get(letra);
 			}
