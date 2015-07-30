@@ -8,15 +8,7 @@ for (var i = 0; i <= palavra.length; i++) {
        soma = soma + letras[letra];
     }
 }
-       console.log("Existem " + soma + " buracos em " + palavra);
 
+console.log("Existem " + soma + " buracos em " + palavra);
 
-
-
-//
-// for (letra in palavra) {//melhor aqui, viu?
-//     if (letra in letras) {
-//         i = i + letras[letra];
-//         console.log("Existem " + i + "buracos em " + palavra);
-//     }
-// }
+//Existem 4 buracos em INCONSTITUCIONALISSIMAMENTE
