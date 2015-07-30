@@ -1,33 +1,34 @@
 import java.util.Scanner;
+import java.util.Map;
+import java.util.Scanner;
 
 public class DOJO_Buracos {
 
 	public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
-
+		
+		Map<String,Integer> letras = new HashMap <String,Integer>();
+		letras.put("A", new Integer(1));
+		letras.put("B", new Integer(2));
+		letras.put("D", new Integer(1));
+		letras.put("O", new Integer(1));
+		letras.put("P", new Integer(1));
+		letras.put("Q",new Integer(1));
+		letras.put("R", new Integer(1));
+		
 		System.out.println("Informe uma palavra:");
 		String palavra = input.next();
-		palavra = palavra.toUpperCase();
+		palavra = palavra.toUpperCase
+		
 		int Contador_Buracos = 0;
-		char aux;
-		for (int i = 0; i < palavra.length(); i++) {
-			aux = palavra.charAt(i);
-			if (aux == 'A') {
-				Contador_Buracos = Contador_Buracos + 1;
-			} else if (aux == 'B') {
-				Contador_Buracos = Contador_Buracos + 2;
-			} else if (aux == 'D') {
-				Contador_Buracos = Contador_Buracos + 1;
-			} else if (aux == 'O') {
-				Contador_Buracos = Contador_Buracos + 1;
-			} else if (aux == 'P') {
-				Contador_Buracos = Contador_Buracos + 1;
-			} else if (aux == 'Q') {
-				Contador_Buracos = Contador_Buracos + 1;
-			} else if (aux == 'R') {
-				Contador_Buracos = Contador_Buracos + 1;
+	
+		for(String letra : palavra.split("")){
+			System.out.println(letra);
+			if(letras.containsKey(letra)){
+				Contador_Buracos += letras.get(letra);
 			}
 		}
+		
 		System.out.println(Contador_Buracos);
 	}
 }
