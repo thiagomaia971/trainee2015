@@ -11,4 +11,5 @@ for (var i = 0; i <= palavra.length; i++) {
 
 console.log("Existem " + soma + " buracos em " + palavra);
 
+//Use o console do navegador
 //Existem 4 buracos em INCONSTITUCIONALISSIMAMENTE
