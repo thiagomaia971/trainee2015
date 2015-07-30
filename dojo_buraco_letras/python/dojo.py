@@ -2,7 +2,7 @@
 
 i = 0
 letras = {'A':1,'B':2,'D':1,'O':1,'P':1,'Q':1,'R':1}
-palavra = "INCONSTITUCIONALISSIMAMENTE"
+palavra = 'INCONSTITUCIONALISSIMAMENTE'
 
 for letra in palavra:
     if letra in letras:
