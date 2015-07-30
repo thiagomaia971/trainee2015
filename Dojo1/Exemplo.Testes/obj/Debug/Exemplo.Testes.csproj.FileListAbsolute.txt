@@ -1,0 +1,7 @@
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\bin\Debug\Exemplo.Testes.dll
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\bin\Debug\Exemplo.Testes.pdb
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\bin\Debug\ContadorDeBuracos.dll
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\bin\Debug\ContadorDeBuracos.pdb
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\obj\Debug\Exemplo.Testes.csprojResolveAssemblyReference.cache
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\obj\Debug\Exemplo.Testes.dll
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\Exemplo.Testes\obj\Debug\Exemplo.Testes.pdb

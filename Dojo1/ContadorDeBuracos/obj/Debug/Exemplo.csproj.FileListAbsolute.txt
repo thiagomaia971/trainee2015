@@ -1,0 +1,5 @@
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\ContadorDeBuracos\bin\Debug\ContadorDeBuracos.dll
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\ContadorDeBuracos\bin\Debug\ContadorDeBuracos.pdb
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\ContadorDeBuracos\obj\Debug\Exemplo.csprojResolveAssemblyReference.cache
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\ContadorDeBuracos\obj\Debug\ContadorDeBuracos.dll
+C:\Users\antonio.jr\Source\Repos\trainee2015\Dojo1\ContadorDeBuracos\obj\Debug\ContadorDeBuracos.pdb
