@@ -5,9 +5,12 @@ class ContaBuraco():
         i = 0
         letras = {'A':1,'B':2,'D':1,'O':1,'P':1,'Q':1,'R':1}
 
-        #int não são iteraveis
+        #int nao sao iteraveis
         if (isinstance(palavra, int)):
             palavra = str(palavra)
+
+        if (palavra == None):
+            return 0
 
         for letra in palavra:
             if letra in letras:

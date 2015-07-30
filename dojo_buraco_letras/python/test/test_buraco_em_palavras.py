@@ -23,5 +23,12 @@ class Teste_Buracos_na_Palavra(unittest.TestCase):
 
         self.assertEqual(0, resultado)
 
+    def test_dado_null_object_retorne_0(self):
+        contador = ContaBuraco()
+        palavra = None
+        resultado = contador.contar(palavra)
+
+        self.assertEqual(0, resultado)
+
 if __name__ == '__main__':
     unittest.main()
