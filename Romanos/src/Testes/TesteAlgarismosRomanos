@@ -1,0 +1,82 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TesteRomanos {
+
+	@Test
+	public void insere_I_retorna_1() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "I";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(1, resultado);
+	}
+	
+	@Test
+	public void insere_X_retorna_10() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "X";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(10, resultado);
+	}
+	@Test
+	public void insere_II_retorna_2() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "II";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(2, resultado);
+	}
+	@Test
+	public void insere_IV_retorna_4() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "IV";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(4, resultado);
+	}
+	
+	@Test
+	public void insere_XXX_retorna_30() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "XXX";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(30, resultado);
+	}
+	
+	@Test(expected = Exception.class)
+	public void insere_XXXX_retorna_Exeption() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "XXXX";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		//assertEquals(30, resultado);
+	}
+
+	@Test (expected = Exception.class)
+	public void insere_VV_retorna_Exeption() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "VV";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		//assertEquals(10, resultado);
+	}
+	
+	@Test
+	public void insere_XIX_retorna_19() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "XIX";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(19, resultado);
+	}
+	
+	//Ainda falhando
+	@Test
+	public void insere_XLIX_retorna_49() throws Exception {
+		ConversorDeAlgarismosRomanos tradutor = new ConversorDeAlgarismosRomanos();
+		String algarismoRomano = "XLIX";
+		int resultado = tradutor.converteAlgarismoRomanoParaArabico(algarismoRomano);
+		assertEquals(49, resultado);
+	}
+}
