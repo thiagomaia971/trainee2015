@@ -1,12 +1,12 @@
-package tests;
+package test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import entities.CaixaEletronico;
+import Class.CaixaEletronico;
 
-public class CaixaEletronico_Tests {
+public class ATM_Test {
 
 	@Test
 	public void Quando_passo_o_valor_10_de_saque_receber_1_nota_de_10() throws Exception {
@@ -16,7 +16,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 10;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("1 nota de 10, 0 nota de 20, 0 nota de 50, 0 nota de 100", resultado);
+		assertEquals("1 nota de 10", resultado);
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 20;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("0 nota de 10, 1 nota de 20, 0 nota de 50, 0 nota de 100", resultado);
+		assertEquals("1 nota de 20", resultado);
 	}
 	
 	@Test
@@ -38,7 +38,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 50;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("0 nota de 10, 0 nota de 20, 1 nota de 50, 0 nota de 100", resultado);
+		assertEquals("1 nota de 50", resultado);
 	}
 	
 	@Test
@@ -49,7 +49,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 100;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("0 nota de 10, 0 nota de 20, 0 nota de 50, 1 nota de 100", resultado);
+		assertEquals("1 nota de 100", resultado);
 	}
 
 	@Test
@@ -60,7 +60,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 110;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("1 nota de 10, 0 nota de 20, 0 nota de 50, 1 nota de 100", resultado);
+		assertEquals("1 nota de 100, 1 nota de 10", resultado);
 	}
 	
 	@Test
@@ -71,7 +71,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 60;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("1 nota de 10, 0 nota de 20, 1 nota de 50, 0 nota de 100", resultado);
+		assertEquals("1 nota de 50, 1 nota de 10", resultado);
 	}
 
 	@Test
@@ -82,7 +82,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 200;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("0 nota de 10, 0 nota de 20, 0 nota de 50, 2 nota de 100", resultado);
+		assertEquals("2 nota de 100", resultado);
 	}
 	
 	@Test
@@ -93,7 +93,7 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 550;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("0 nota de 10, 0 nota de 20, 1 nota de 50, 5 nota de 100", resultado);
+		assertEquals("5 nota de 100, 1 nota de 50", resultado);
 	}
 
 	@Test
@@ -104,7 +104,29 @@ public class CaixaEletronico_Tests {
 		int valorSaque = 2510;
 		
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
-		assertEquals("1 nota de 10, 0 nota de 20, 0 nota de 50, 25 nota de 100", resultado);
+		assertEquals("25 nota de 100, 1 nota de 10", resultado);
+	}
+	
+	@Test
+	public void Quando_passo_o_valor_130_de_saque_receber_1_nota_de_20_e_1_nota_de_100_e_nota_de_10() throws Exception {
+		
+		CaixaEletronico caixaEletronico = new CaixaEletronico();
+		
+		int valorSaque = 130;
+		
+		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
+		assertEquals("1 nota de 100, 1 nota de 20, 1 nota de 10", resultado);
+	}
+	
+	@Test
+	public void Quando_passo_o_valor_180_de_saque_receber_1_nota_de_100_e_1_nota_de_50_1_nota_de_20_e_nota_de_10() throws Exception {
+		
+		CaixaEletronico caixaEletronico = new CaixaEletronico();
+		
+		int valorSaque = 180;
+		
+		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
+		assertEquals("1 nota de 100, 1 nota de 50, 1 nota de 20, 1 nota de 10", resultado);
 	}
 	
 	@Test(expected = Exception.class)
@@ -128,7 +150,5 @@ public class CaixaEletronico_Tests {
 		String resultado = CaixaEletronico.RetornarCedulas(valorSaque);
 		
 	}
-	
-	
 
 }
